@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format:debuger": "npx prettier --check --log-level debug $FORMAT_PATH",
+    "format:writer": "npx prettier --check --write $FORMAT_PATH",
     "husky:prepare": "husky install",
     "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/main.ts' -e ts",
     "test": "echo \"Error: no test specified\" && exit 1"
