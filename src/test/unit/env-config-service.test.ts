@@ -1,5 +1,5 @@
 describe('EnvConfigService', () => {
-  it('should be defined', () => {
+  it('should test if the instance of EnvConfig is defined', () => {
     expect(true).toBeTruthy();
   });
 });
