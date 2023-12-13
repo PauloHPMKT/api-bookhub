@@ -8,7 +8,9 @@
     "format:writer": "npx prettier --check --write $FORMAT_PATH",
     "husky:prepare": "husky install",
     "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/main.ts' -e ts",
-    "test": "jest"
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "test:staged": "npm run test --findRelatedTests"
   },
   "keywords": [],
   "author": "",
